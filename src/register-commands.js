@@ -22,15 +22,15 @@ const commands = [
     )
     .addStringOption((option) =>
       option
-        .setName('excluir_ids')
-        .setDescription('IDs de usuários para excluir, separados por vírgula')
-        .setRequired(false),
-    )
-    .addStringOption((option) =>
-      option
         .setName('canal_log_id')
         .setDescription('ID do canal para log e progresso da operação')
         .setRequired(true),
+    )
+    .addStringOption((option) =>
+      option
+        .setName('excluir_ids')
+        .setDescription('IDs de usuários para excluir, separados por vírgula')
+        .setRequired(false),
     ),
 ].map((command) => command.toJSON());
 
